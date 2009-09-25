@@ -15,7 +15,7 @@ configure do
 		:url_base => 'http://pipetodevnull.upstrat.com',
 		:admin_password => 'h1mSG6LDAqH53qTuCoVqJOyQolBfUDXyuFjJy73r46ZXQLG4WKFqwZszgj9Fe03',
 		:admin_cookie_key => 'scanty_admin',
-		:admin_cookie_value => '51d6d976913ace58'
+		:admin_cookie_value => '51d6d976913ace58',
     :disqus_shortname => 'pipetodevnull'
 	)
 end
