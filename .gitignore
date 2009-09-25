@@ -1,2 +1,6 @@
 *.log
 blog.db
+tmp
+db.sql
+creds
+config/db.uri

@@ -5,17 +5,18 @@ $LOAD_PATH.unshift File.dirname(__FILE__) + '/vendor/sequel'
 require 'sequel'
 
 configure do
-	Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://blog.db')
+	Sequel.connect(ENV['DATABASE_URL'] || 'mysql://root:@localhost/pipetodevnull')
 
 	require 'ostruct'
 	Blog = OpenStruct.new(
-		:title => 'a scanty blog',
-		:author => 'John Doe',
-		:url_base => 'http://localhost:4567/',
-		:admin_password => 'changeme',
+		:title => 'pipe :to => /dev/null',
+		:subtitle => 'there is noise in silence',
+		:author => 'cyx',
+		:url_base => 'http://pipetodevnull.upstrat.com',
+		:admin_password => 'h1mSG6LDAqH53qTuCoVqJOyQolBfUDXyuFjJy73r46ZXQLG4WKFqwZszgj9Fe03',
 		:admin_cookie_key => 'scanty_admin',
-		:admin_cookie_value => '51d6d976913ace58',
-		:disqus_shortname => nil
+		:admin_cookie_value => '51d6d976913ace58'
+    :disqus_shortname => 'pipetodevnull'
 	)
 end
 
@@ -122,4 +123,3 @@ post '/past/:year/:month/:day/:slug/' do
 	post.save
 	redirect post.url
 end
-

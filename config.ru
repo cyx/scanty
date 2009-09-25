@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'sinatra'
+require '/home/cyx/.gem/ruby/1.8/gems/sinatra-0.9.4/lib/sinatra'
 
 Sinatra::Application.default_options.merge!(
   :views => File.join(File.dirname(__FILE__), 'views'),
