@@ -246,11 +246,12 @@ hr {
   color: #BAAE9E;
 }
 
-#legal {
+.copyright {
 	clear: both;
 	margin: 0;
 	padding: 10px 0;
-	color: #525252;
+	color: #666666;
+	text-align: left;
 }
 
 /* Archive */
