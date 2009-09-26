@@ -228,13 +228,14 @@ hr {
 
 #footer .inner {
   margin: 0 auto;
+  padding-top: 2em;
   width: 50em;
   text-align: left;
 }
 
 #footer .column { 
   float:left; 
-  width: 16em;
+  width: 16.5em;
 }
 
 #footer h1 {
